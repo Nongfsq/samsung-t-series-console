@@ -80,6 +80,14 @@ Requirements:
 - Rust toolchain for building the CLI
 - Optional: administrator PowerShell for service policy changes
 
+Download a release build from the GitHub Releases page, extract the zip, then run:
+
+```powershell
+pwsh -ExecutionPolicy Bypass -File .\src\SamsungTConsole.ps1
+```
+
+The release zip includes `target\release\stc.exe`, so the GUI can use the native Rust eject path without rebuilding.
+
 Build the release CLI:
 
 ```powershell

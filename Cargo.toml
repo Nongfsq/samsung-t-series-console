@@ -8,7 +8,7 @@ members = [
 [workspace.package]
 edition = "2024"
 license = "MIT"
-repository = "https://example.invalid/samsung-t-series-console"
+repository = "https://github.com/Nongfsq/samsung-t-series-console"
 
 [workspace.dependencies]
 anyhow = "1"
