@@ -18,12 +18,13 @@ Samsung T-Series Console is an unofficial, local-first operator utility for Sams
 
 ## Why This Exists
 
-Portable SSDs are easy to plug in and hard to trust at unplug time. Windows may refuse removal without naming the blocker, while background services such as Windows Search, Explorer shell extensions, or vendor utilities may touch the device at the worst possible moment.
+Portable SSDs are easy to plug in and hard to trust at unplug time. Windows may refuse removal without naming the blocker, while background services such as Windows Search, Explorer shell extensions, or vendor utilities may touch the device at the worst possible moment. Some Samsung T-series drives can also appear to collapse into extremely slow writes, sometimes around 1 MB/s, after Windows-side contention, retry-heavy I/O, indexing pressure, or an unfavorable format/profile state.
 
 This project gives the daily unplug workflow a concrete control surface:
 
 - which Samsung T-series SSD is connected,
 - whether the filesystem and allocation unit match a sensible profile,
+- whether a sudden slow-write condition may be caused by removable-drive policy, indexing, service contention, or recent I/O retries,
 - whether Windows Search, Samsung Magician, Explorer, or recent system events raise eject risk,
 - whether a real eject succeeds,
 - and, when Windows vetoes eject, the veto type, process name, PID, command line, and affected device when available.
@@ -56,6 +57,12 @@ Supported repair strategy:
 | Format profile review | Recommend exFAT allocation-unit profiles for compatible Samsung T-series workflows. | Destructive formatting requires an explicit confirmation phrase. |
 
 The default position is conservative: if the drive recently showed I/O retries, if Windows reports outstanding opens, or if the eject path returns a veto, the tool reports a blocked or caution state instead of encouraging a risky unplug.
+
+### Sudden 1 MB/s Write Slowdowns
+
+For affected Samsung T-series portable SSDs, a sudden drop to roughly 1 MB/s write speed can be caused by host-side conditions rather than permanent device failure. When the slowdown is driven by Windows Search scanning the drive, Samsung Magician service contention, Explorer or shell extension access, recent Disk 153 retry patterns, or a poor exFAT allocation-unit profile, this project may fully resolve the practical symptom by removing the blocker, applying policy, and guiding the drive back to a clean eject/reconnect cycle.
+
+This is intentionally scoped: the tool cannot guarantee recovery from failing flash media, controller faults, thermal throttling, bad USB cables, unstable ports, firmware defects, or real filesystem corruption. In those cases it still provides diagnostics and safer next steps instead of forcing writes or ejects.
 
 ## Architecture
 
