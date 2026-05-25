@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/stc-logo.svg" width="112" alt="Samsung T-Series Console project logo">
+</p>
+
 # Samsung T-Series Console
 
 **Windows-native safe eject, readiness checks, and blocker forensics for Samsung T7, T7 Shield, and T9 portable SSDs.**
@@ -8,7 +12,13 @@
 ![Output](https://img.shields.io/badge/output-JSON-0f766e)
 ![License](https://img.shields.io/badge/license-MIT-16a34a)
 
-Samsung T-Series Console turns the vague Windows "device is currently in use" moment into an operator-grade workflow: identify the SSD, measure eject risk, apply common Windows policy fixes, attempt a real CfgMgr32 eject, and return structured evidence when Windows vetoes the request.
+<p align="center">
+  <img src="assets/stc-hero.svg" alt="Samsung T-Series Console safe-eject and repair policy banner">
+</p>
+
+Samsung T-Series Console is an unofficial, local-first operator utility for Samsung T-series portable SSD workflows. It turns the vague Windows "device is currently in use" moment into a governed process: identify the SSD, measure eject risk, apply documented Windows-side repair policies, attempt a real CfgMgr32 eject, and return structured evidence when Windows vetoes the request.
+
+> This project is not affiliated with, endorsed by, or sponsored by Samsung Electronics. Product names are used only to identify compatible devices.
 
 ## Why This Exists
 
@@ -34,6 +44,22 @@ This project gives the daily unplug workflow a concrete control surface:
 | Readiness Evidence | Combines Disk 153 retry counters, Kernel-PnP veto counters, format policy, and blocker hints. |
 | Format Guardrails | Destructive formatting is behind explicit confirmation phrases. |
 | Local Only | No telemetry, no network calls, no background daemon. |
+
+## Repair & Policy Strategy
+
+The project treats "repair" as controlled remediation of Windows-side conditions that commonly make removable SSDs unsafe or inconvenient to eject. It does not claim to repair flash wear, controller faults, firmware defects, filesystem corruption, or physically damaged media.
+
+Supported repair strategy:
+
+| Strategy | Purpose | Safety posture |
+| --- | --- | --- |
+| Windows Search exclusion | Prevent the SearchIndexer service from scanning connected Samsung T-series drive roots. | Non-destructive registry policy update. |
+| Samsung Magician service policy | Set `SamsungMagicianSVC` to manual startup and stop the running instance when elevated. | Service-scoped change; no arbitrary process killing. |
+| Eject veto forensics | Convert Windows vetoes into process, PID, veto type, command line, and device evidence when available. | Observational; no forced removal. |
+| Event-based readiness | Surface Disk 153 retry signals and Kernel-PnP 225 blocker events before unplugging. | Read-only event log analysis. |
+| Format profile review | Recommend exFAT allocation-unit profiles for compatible Samsung T-series workflows. | Destructive formatting requires an explicit confirmation phrase. |
+
+The default position is conservative: if the drive recently showed I/O retries, if Windows reports outstanding opens, or if the eject path returns a veto, the tool reports a blocked or caution state instead of encouraging a risky unplug.
 
 ## Architecture
 
@@ -208,6 +234,10 @@ pwsh -NoProfile -ExecutionPolicy Bypass -File .\tests\Policy.Tests.ps1
 This public repository intentionally contains no personal drive logs, backup listings, serial-number baselines, or historical diagnosis artifacts. Runtime logs are written under `logs/` and ignored by Git.
 
 If you are open-sourcing your own fork, publish a clean repository instead of making a private working repository public. Old commits can contain logs, serial numbers, local paths, and test artifacts even after the current tree looks clean.
+
+## Trademark Notice
+
+Samsung, T7, T7 Shield, and T9 are trademarks or product names of their respective owners. This repository uses those names only to describe device compatibility. The project logo and banner in `assets/` are original SVG artwork for this open-source project and are not Samsung logos or official Samsung product images.
 
 ## License
 

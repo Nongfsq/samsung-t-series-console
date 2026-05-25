@@ -1,0 +1,82 @@
+<svg width="1280" height="520" viewBox="0 0 1280 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Samsung T-Series Console hero image</title>
+  <desc id="desc">Original banner showing a portable SSD, safe-eject signal, JSON evidence, and policy repair lanes.</desc>
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1280" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="0.48" stop-color="#102A43"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(344 214) rotate(38) scale(430 218)">
+      <stop stop-color="#38BDF8" stop-opacity="0.50"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(962 345) rotate(-22) scale(390 214)">
+      <stop stop-color="#22C55E" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drive" x1="793" y1="84" x2="997" y2="446" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="driveScreen" x1="820" y1="120" x2="968" y2="405" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="drop" x="705" y="30" width="390" height="470" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#020617" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="520" rx="36" fill="url(#heroBg)"/>
+  <rect width="1280" height="520" rx="36" fill="url(#glowA)"/>
+  <rect width="1280" height="520" rx="36" fill="url(#glowB)"/>
+  <path d="M94 396C185 304 261 307 360 354C491 416 608 388 710 302C819 210 901 190 1014 245C1103 288 1164 276 1214 225" stroke="#E2E8F0" stroke-opacity="0.13" stroke-width="2"/>
+  <path d="M82 116H610" stroke="#E2E8F0" stroke-opacity="0.10"/>
+  <path d="M82 444H1198" stroke="#E2E8F0" stroke-opacity="0.10"/>
+  <g opacity="0.80">
+    <rect x="78" y="78" width="142" height="36" rx="18" fill="#E2E8F0" fill-opacity="0.10" stroke="#E2E8F0" stroke-opacity="0.16"/>
+    <text x="98" y="101" fill="#BAE6FD" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">UNOFFICIAL</text>
+  </g>
+  <text x="78" y="177" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800">Samsung T-Series Console</text>
+  <text x="82" y="226" fill="#C7D2FE" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600">Safe eject. Readiness evidence. Windows-side repair policy.</text>
+  <text x="82" y="273" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="18">A local operator console for Samsung T7, T7 Shield, and T9 portable SSD workflows.</text>
+  <g transform="translate(82 320)">
+    <rect width="188" height="48" rx="16" fill="#0F172A" fill-opacity="0.72" stroke="#38BDF8" stroke-opacity="0.42"/>
+    <circle cx="27" cy="24" r="8" fill="#38BDF8"/>
+    <text x="48" y="30" fill="#E0F2FE" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">CfgMgr32 eject</text>
+  </g>
+  <g transform="translate(292 320)">
+    <rect width="196" height="48" rx="16" fill="#0F172A" fill-opacity="0.72" stroke="#22C55E" stroke-opacity="0.42"/>
+    <circle cx="27" cy="24" r="8" fill="#22C55E"/>
+    <text x="48" y="30" fill="#DCFCE7" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">Policy repair</text>
+  </g>
+  <g transform="translate(510 320)">
+    <rect width="182" height="48" rx="16" fill="#0F172A" fill-opacity="0.72" stroke="#F97316" stroke-opacity="0.42"/>
+    <circle cx="27" cy="24" r="8" fill="#F97316"/>
+    <text x="48" y="30" fill="#FFEDD5" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">JSON evidence</text>
+  </g>
+  <g filter="url(#drop)">
+    <rect x="780" y="72" width="226" height="368" rx="48" fill="url(#drive)"/>
+    <rect x="812" y="112" width="162" height="286" rx="32" fill="url(#driveScreen)"/>
+    <rect x="835" y="142" width="116" height="38" rx="19" fill="#E2E8F0" fill-opacity="0.10"/>
+    <text x="858" y="166" fill="#BAE6FD" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800">STC</text>
+    <path d="M855 246H918C938 246 954 262 954 282C954 302 938 318 918 318H855" stroke="#F8FAFC" stroke-width="20" stroke-linecap="round"/>
+    <path d="M855 246V214M855 318V354" stroke="#F8FAFC" stroke-width="20" stroke-linecap="round"/>
+    <path d="M879 282H1017" stroke="#22C55E" stroke-width="20" stroke-linecap="round"/>
+    <path d="M990 248L1030 282L990 316" stroke="#22C55E" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="858" y="374" width="72" height="9" rx="4.5" fill="#94A3B8"/>
+  </g>
+  <g transform="translate(936 112)" opacity="0.92">
+    <rect width="268" height="218" rx="28" fill="#020617" fill-opacity="0.62" stroke="#E2E8F0" stroke-opacity="0.14"/>
+    <text x="24" y="48" fill="#93C5FD" font-family="Consolas, 'Cascadia Mono', monospace" font-size="17">{</text>
+    <text x="42" y="78" fill="#E2E8F0" font-family="Consolas, 'Cascadia Mono', monospace" font-size="15">"result": "ok",</text>
+    <text x="42" y="108" fill="#E2E8F0" font-family="Consolas, 'Cascadia Mono', monospace" font-size="15">"drive": "E:",</text>
+    <text x="42" y="138" fill="#86EFAC" font-family="Consolas, 'Cascadia Mono', monospace" font-size="15">"still_present": false</text>
+    <text x="24" y="168" fill="#93C5FD" font-family="Consolas, 'Cascadia Mono', monospace" font-size="17">}</text>
+  </g>
+  <g transform="translate(986 354)" opacity="0.84">
+    <path d="M0 0H166" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M0 28H118" stroke="#22C55E" stroke-width="8" stroke-linecap="round"/>
+    <path d="M0 56H148" stroke="#F97316" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Samsung T-Series Console project logo</title>
+  <desc id="desc">Original shield and portable SSD mark for an unofficial safe-eject utility.</desc>
+  <defs>
+    <linearGradient id="bg" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.52" stop-color="#102C57"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="device" x1="158" y1="126" x2="354" y2="386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="174" y1="151" x2="338" y2="365" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <filter id="shadow" x="72" y="72" width="368" height="392" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg)"/>
+  <path d="M256 78L394 130V234C394 318 340 394 256 430C172 394 118 318 118 234V130L256 78Z" fill="#E2E8F0" fill-opacity="0.10" stroke="#E2E8F0" stroke-opacity="0.24" stroke-width="8"/>
+  <g filter="url(#shadow)">
+    <rect x="158" y="116" width="196" height="280" rx="42" fill="url(#device)"/>
+    <rect x="182" y="146" width="148" height="220" rx="28" fill="#0F172A"/>
+    <rect x="198" y="166" width="116" height="180" rx="20" fill="url(#accent)" fill-opacity="0.16"/>
+    <path d="M230 220H282C300 220 314 234 314 252C314 270 300 284 282 284H230" stroke="#F8FAFC" stroke-width="18" stroke-linecap="round"/>
+    <path d="M230 220V194M230 284V318" stroke="#F8FAFC" stroke-width="18" stroke-linecap="round"/>
+    <path d="M250 252H330" stroke="#22C55E" stroke-width="18" stroke-linecap="round"/>
+    <path d="M312 222L346 252L312 282" stroke="#22C55E" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="222" y="336" width="68" height="10" rx="5" fill="#94A3B8"/>
+  </g>
+  <path d="M128 405H384" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" stroke-opacity="0.65"/>
+</svg>
