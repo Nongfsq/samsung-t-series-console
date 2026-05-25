@@ -12,10 +12,6 @@
 ![Output](https://img.shields.io/badge/output-JSON-0f766e)
 ![License](https://img.shields.io/badge/license-MIT-16a34a)
 
-<p align="center">
-  <img src="assets/stc-hero.svg" alt="Samsung T-Series Console safe-eject and repair policy banner">
-</p>
-
 Samsung T-Series Console is an unofficial, local-first operator utility for Samsung T-series portable SSD workflows. It turns the vague Windows "device is currently in use" moment into a governed process: identify the SSD, measure eject risk, apply documented Windows-side repair policies, attempt a real CfgMgr32 eject, and return structured evidence when Windows vetoes the request.
 
 > This project is not affiliated with, endorsed by, or sponsored by Samsung Electronics. Product names are used only to identify compatible devices.
