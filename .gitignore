@@ -1,0 +1,15 @@
+/logs/*
+!/logs/.gitkeep
+
+*.tmp
+*.bak
+*.evtx
+*.etl
+
+/.cache/
+/tmp/
+/target/
+/.stc-benchmark-*.bin
+
+Thumbs.db
+Desktop.ini
