@@ -250,6 +250,12 @@ If you are open-sourcing your own fork, publish a clean repository instead of ma
 
 Samsung, T7, T7 Shield, and T9 are trademarks or product names of their respective owners. This repository uses those names only to describe device compatibility. The project logo and banner in `assets/` are original SVG artwork for this open-source project and are not Samsung logos or official Samsung product images.
 
+## Support
+
+If this project is useful to you, you can buy me a coffee.
+
+<a href="https://buymeacoffee.com/frankmenger"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" height="44"></a>
+
 ## License
 
 MIT
